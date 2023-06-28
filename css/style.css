@@ -1,0 +1,26 @@
+/* .a_tbdr {
+    border: 1px dashed #000;
+} */
+.a_cont {
+    height: 650px;
+}
+.a_mysection {
+    border: 10px solid #0DCAF0 !important;
+    transform: scale(0.8,0.8);
+}
+.a_h33 {
+    height: 216px;
+}
+.a_h33_c {
+    background-image: url(../img/hand1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.a_1 {
+    width: 42px;
+    height: 42px;
+    border-style: outset;
+    background-color: #f5499162;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.9);
+}
