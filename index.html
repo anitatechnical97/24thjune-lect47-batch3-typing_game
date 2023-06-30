@@ -8,26 +8,58 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
+
+        <!--Modal Start-->
+          
+          <!-- Modal -->
+          <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="registrationModalLabel">Register Yourself</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="first_name" class="form-label">First Name</label>
+                          <input type="text" name="first_name" class="form-control" id="first_name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="last_name" class="form-label">Last Name</label>
+                          <input type="text" name="last_name" class="form-control" id="last_name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary a_save" onclick="saveRegistrationInfo()">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--Modal End-->
         <div class="a_tbdr a_cont container">
             <section class="a_mysection border border-5 rounded-4 h-100 overflow-hidden">
 
                 <div class="row m-0 h-100">
                     <div class="col-9 a_tbdr h-100" style="background: #EFFFD7;">
-                        <div class="display-6 a_tbdr overflow-hidden a_h33">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</div> 
-                        <div class="a_keyboard a_tbdr a_h33 ps-5">
-                            <button class="btn btn-light a_1">`~</button>
-                            <button class="btn btn-light a_1">1</button>
-                            <button class="btn btn-light a_1">2</button>
-                            <button class="btn btn-light a_1">3</button>
-                            <button class="btn btn-light a_1">4</button>
-                            <button class="btn btn-light a_1">5</button>
-                            <button class="btn btn-light a_1">6</button>
-                            <button class="btn btn-light a_1">7</button>
-                            <button class="btn btn-light a_1">8</button>
-                            <button class="btn btn-light a_1">9</button>
-                            <button class="btn btn-light a_1">0</button>
-                            <button class="btn btn-light a_1">-</button>
-                            <button class="btn btn-light a_1">=</button>
+                        <div class="display-6 a_tbdr overflow-hidden a_h33">It is a long established fact that a reader will be distracted by the readable content of a page</div> 
+                        <div class="a_keyboard a_tbdr a_h33">
+                            <button class="btn btn-light a_1 a_active">~<br>`</button>
+                            <button class="btn btn-light a_1">!<br>1</button>
+                            <button class="btn btn-light a_1">@<br>2</button>
+                            <button class="btn btn-light a_1">#<br>3</button>
+                            <button class="btn btn-light a_1">$<br>4</button>
+                            <button class="btn btn-light a_1">%<br>5</button>
+                            <button class="btn btn-light a_1">^<br>6</button>
+                            <button class="btn btn-light a_1">&<br>7</button>
+                            <button class="btn btn-light a_1">*<br>8</button>
+                            <button class="btn btn-light a_1">(<br>9</button>
+                            <button class="btn btn-light a_1">)<br>0</button>
+                            <button class="btn btn-light a_1">_<br>-</button>
+                            <button class="btn btn-light a_1">+<br>=</button>
                             <button class="btn btn-light a_1" style = "width:70px;">Back</button>
 
                             <div class="a_keyboard a_tbdr">
@@ -60,10 +92,10 @@
                                 <button class="btn btn-light a_1">L</button>
                                 <button class="btn btn-light a_1">:;</button>
                                 <button class="btn btn-light a_1">"'</button>
-                                <button class="btn btn-light a_1" style = "width:61px;">Enter</button>
+                                <button class="btn btn-light a_1" style = "width:79px;">Enter</button>
                             </div>
                             <div class="a_keyboard a_tbdr">
-                                <button class="btn btn-light a_1" style = "width:110px;">Shift</button>
+                                <button class="btn btn-light a_1" style = "width:115px;">Shift</button>
                                 <button class="btn btn-light a_1">Z</button>
                                 <button class="btn btn-light a_1">X</button>
                                 <button class="btn btn-light a_1">C</button>
@@ -74,14 +106,14 @@
                                 <button class="btn btn-light a_1"><,</button>
                                 <button class="btn btn-light a_1">>.</button>
                                 <button class="btn btn-light a_1">/?</button>
-                                <button class="btn btn-light a_1" style = "width:94px;">Shift</button>
+                                <button class="btn btn-light a_1" style = "width:115px;">Shift</button>
                             </div>
                             <div class="a_keyboard a_tbdr">
                                 <button class="btn btn-light a_1">ctrl</button>
                                 <button class="btn btn-light a_1">fn</button>
                                 <button class="btn btn-light a_1"></button>
                                 <button class="btn btn-light a_1">alt</button>
-                                <button class="btn btn-light a_1" style = "width:254px;"></button>
+                                <button class="btn btn-light a_1" style = "width:289px;"></button>
                                 <button class="btn btn-light a_1">alt</button>
                                 <button class="btn btn-light a_1">ctrl</button>
                                 <button class="btn btn-light a_1"><</button>
@@ -89,13 +121,26 @@
                                 <button class="btn btn-light a_1"></button>
                             </div>
                         </div>
-                        <div class="a_hand a_tbdr a_h33 a_h33_c"></div>
+                        <div class="a_hand a_tbdr a_h33 a_h33_c pt-5 mt-5 text-center position-relative">
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 238px; top: 107px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 274px; top: 90px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 306px; top: 101px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 348px; top: 185px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 407px; top: 188px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 458px; top: 101px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 496px; top: 90px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 531px; top: 104px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 567px; top: 145px;"></div>
+                            <img class="img-fluid w-50 position relative" style="bottom:10px !important;" src="./img/hand1.png">
+                        </div>
                     </div>
                     <div class="col-3 a_tbdr h-100" style="background: #D2F59F;">
-                        <h5 class="border-bottom border-4 mt-5" style="border-bottom-color: EFFFD7;">Time</h5>
-                        <h3> <strong>03:00</strong> </h3>
-                        <div class="d-grid gap-2">
-                            <button class="btn text-dark fw-bold btn-outline-success fs-4">Start</button>
+                        <h2 class="mt-4 a_welcome"></h2>
+                        <h5 class="border-bottom border-4 mt-4" style="border-bottom-color: EFFFD7;">Time</h5>
+                        <h2 class="display-3 fw-semibold"> <strong>03:00</strong> </h2>
+                        <div class="d-grid gap-2 position-relative">
+                            <button class="btn text-dark fw-bold btn-outline-success fs-4 position-absolute bottom-0" style="bottom:-420px !important">Start</button>
                         </div>
                     </div>
                 </div>

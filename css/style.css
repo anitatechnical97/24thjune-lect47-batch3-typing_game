@@ -1,26 +1,40 @@
-/* .a_tbdr {
+.a_tbdr {
     border: 1px dashed #000;
-} */
+}
 .a_cont {
-    height: 650px;
+    height: 700px;
 }
 .a_mysection {
     border: 10px solid #0DCAF0 !important;
     transform: scale(0.8,0.8);
+    background: #9EF89C;
 }
 .a_h33 {
     height: 216px;
 }
-.a_h33_c {
+/* .a_h33_c {
     background-image: url(../img/hand1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
-}
+} */
 .a_1 {
-    width: 42px;
-    height: 42px;
+    width: 51px;
+    height: 51px;
     border-style: outset;
     background-color: #f5499162;
     box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.9);
+}
+.a_active {
+    transform: translate(1px,1px);
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.9);
+}
+.a_circle {
+    width: 25px;
+    height: 25px;
+}
+.a_left_pinky {
+    left: 211px;
+    top: 142px;
+    /* display: none; */
 }
