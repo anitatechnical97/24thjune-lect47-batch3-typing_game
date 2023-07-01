@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
+        <audio controls class="invisible a_audio">
+            <source src="./sound/sound3.mp3" type="audio/mpeg">
+        </audio>
 
         <!--Modal Start-->
           
@@ -47,91 +50,91 @@
                     <div class="col-9 a_tbdr h-100" style="background: #EFFFD7;">
                         <div class="display-6 a_tbdr overflow-hidden a_h33">It is a long established fact that a reader will be distracted by the readable content of a page</div> 
                         <div class="a_keyboard a_tbdr a_h33">
-                            <button class="btn btn-light a_1 a_active">~<br>`</button>
-                            <button class="btn btn-light a_1">!<br>1</button>
-                            <button class="btn btn-light a_1">@<br>2</button>
-                            <button class="btn btn-light a_1">#<br>3</button>
-                            <button class="btn btn-light a_1">$<br>4</button>
-                            <button class="btn btn-light a_1">%<br>5</button>
-                            <button class="btn btn-light a_1">^<br>6</button>
-                            <button class="btn btn-light a_1">&<br>7</button>
-                            <button class="btn btn-light a_1">*<br>8</button>
-                            <button class="btn btn-light a_1">(<br>9</button>
-                            <button class="btn btn-light a_1">)<br>0</button>
-                            <button class="btn btn-light a_1">_<br>-</button>
-                            <button class="btn btn-light a_1">+<br>=</button>
-                            <button class="btn btn-light a_1" style = "width:70px;">Back</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">~<br>`</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">!<br>1</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">@<br>2</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">#<br>3</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">$<br>4</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">%<br>5</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">^<br>6</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">&<br>7</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">*<br>8</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">(<br>9</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">)<br>0</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">_<br>-</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)">+<br>=</button>
+                            <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:70px;">Back</button>
 
                             <div class="a_keyboard a_tbdr">
-                                <button class="btn btn-light a_1" style = "width:68px;">Tab</button>
-                                <button class="btn btn-light a_1">Q</button>
-                                <button class="btn btn-light a_1">W</button>
-                                <button class="btn btn-light a_1">E</button>
-                                <button class="btn btn-light a_1">R</button>
-                                <button class="btn btn-light a_1">T</button>
-                                <button class="btn btn-light a_1">Y</button>
-                                <button class="btn btn-light a_1">U</button>
-                                <button class="btn btn-light a_1">I</button>
-                                <button class="btn btn-light a_1">O</button>
-                                <button class="btn btn-light a_1">P</button>
-                                <button class="btn btn-light a_1">[</button>
-                                <button class="btn btn-light a_1">]</button>
-                                <button class="btn btn-light a_1">\</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:68px;">Tab</button>
+                                <button class="btn btn-light a_1 a_q" onclick="playSound(this)">Q</button>
+                                <button class="btn btn-light a_1 a_w" onclick="playSound(this)">W</button>
+                                <button class="btn btn-light a_1 a_e" onclick="playSound(this)">E</button>
+                                <button class="btn btn-light a_1 a_r" onclick="playSound(this)">R</button>
+                                <button class="btn btn-light a_1 a_t" onclick="playSound(this)">T</button>
+                                <button class="btn btn-light a_1 a_y" onclick="playSound(this)">Y</button>
+                                <button class="btn btn-light a_1 a_u" onclick="playSound(this)">U</button>
+                                <button class="btn btn-light a_1 a_i" onclick="playSound(this)">I</button>
+                                <button class="btn btn-light a_1 a_o" onclick="playSound(this)">O</button>
+                                <button class="btn btn-light a_1 a_p" onclick="playSound(this)">P</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">[</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">]</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">\</button>
                             </div>
 
                             <div class="a_keyboard a_tbdr">
-                                <button class="btn btn-light a_1" style = "width:95px;">Caps lock</button>
-                                <button class="btn btn-light a_1">A</button>
-                                <button class="btn btn-light a_1">S</button>
-                                <button class="btn btn-light a_1">D</button>
-                                <button class="btn btn-light a_1">F</button>
-                                <button class="btn btn-light a_1">G</button>
-                                <button class="btn btn-light a_1">H</button>
-                                <button class="btn btn-light a_1">J</button>
-                                <button class="btn btn-light a_1">K</button>
-                                <button class="btn btn-light a_1">L</button>
-                                <button class="btn btn-light a_1">:;</button>
-                                <button class="btn btn-light a_1">"'</button>
-                                <button class="btn btn-light a_1" style = "width:79px;">Enter</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:95px;">Caps lock</button>
+                                <button class="btn btn-light a_1 a_a" onclick="playSound(this)">A</button>
+                                <button class="btn btn-light a_1 a_s" onclick="playSound(this)">S</button>
+                                <button class="btn btn-light a_1 a_d" onclick="playSound(this)">D</button>
+                                <button class="btn btn-light a_1 a_f" onclick="playSound(this)">F</button>
+                                <button class="btn btn-light a_1 a_g" onclick="playSound(this)">G</button>
+                                <button class="btn btn-light a_1 a_h" onclick="playSound(this)">H</button>
+                                <button class="btn btn-light a_1 a_j" onclick="playSound(this)">J</button>
+                                <button class="btn btn-light a_1 a_k" onclick="playSound(this)">K</button>
+                                <button class="btn btn-light a_1 a_l" onclick="playSound(this)">L</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">:;</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">"'</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:79px;">Enter</button>
                             </div>
                             <div class="a_keyboard a_tbdr">
-                                <button class="btn btn-light a_1" style = "width:115px;">Shift</button>
-                                <button class="btn btn-light a_1">Z</button>
-                                <button class="btn btn-light a_1">X</button>
-                                <button class="btn btn-light a_1">C</button>
-                                <button class="btn btn-light a_1">V</button>
-                                <button class="btn btn-light a_1">B</button>
-                                <button class="btn btn-light a_1">N</button>
-                                <button class="btn btn-light a_1">M</button>
-                                <button class="btn btn-light a_1"><,</button>
-                                <button class="btn btn-light a_1">>.</button>
-                                <button class="btn btn-light a_1">/?</button>
-                                <button class="btn btn-light a_1" style = "width:115px;">Shift</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:115px;">Shift</button>
+                                <button class="btn btn-light a_1 a_z" onclick="playSound(this)">Z</button>
+                                <button class="btn btn-light a_1 a_x" onclick="playSound(this)">X</button>
+                                <button class="btn btn-light a_1 a_c" onclick="playSound(this)">C</button>
+                                <button class="btn btn-light a_1 a_v" onclick="playSound(this)">V</button>
+                                <button class="btn btn-light a_1 a_b" onclick="playSound(this)">B</button>
+                                <button class="btn btn-light a_1 a_n" onclick="playSound(this)">N</button>
+                                <button class="btn btn-light a_1 a_m" onclick="playSound(this)">M</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)"><,</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">>.</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">/?</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:115px;">Shift</button>
                             </div>
                             <div class="a_keyboard a_tbdr">
-                                <button class="btn btn-light a_1">ctrl</button>
-                                <button class="btn btn-light a_1">fn</button>
-                                <button class="btn btn-light a_1"></button>
-                                <button class="btn btn-light a_1">alt</button>
-                                <button class="btn btn-light a_1" style = "width:289px;"></button>
-                                <button class="btn btn-light a_1">alt</button>
-                                <button class="btn btn-light a_1">ctrl</button>
-                                <button class="btn btn-light a_1"><</button>
-                                <button class="btn btn-light a_1"><,</button>
-                                <button class="btn btn-light a_1"></button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">ctrl</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">fn</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)"></button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">alt</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)" style = "width:289px;"></button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">alt</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)">ctrl</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)"><</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)"><,</button>
+                                <button class="btn btn-light a_1" onclick="playSound(this)"></button>
                             </div>
                         </div>
                         <div class="a_hand a_tbdr a_h33 a_h33_c pt-5 mt-5 text-center position-relative">
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 238px; top: 107px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 274px; top: 90px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 306px; top: 101px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 348px; top: 185px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 407px; top: 188px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 458px; top: 101px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 496px; top: 90px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 531px; top: 104px;"></div>
-                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky" style="left: 567px; top: 145px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky l_pinky"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky l_ring" style="left: 238px; top: 107px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky l_middle" style="left: 274px; top: 90px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky l_index" style="left: 306px; top: 101px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky l_thumb" style="left: 348px; top: 185px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky r_thumb" style="left: 407px; top: 188px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky r_index" style="left: 458px; top: 101px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky r_middle" style="left: 496px; top: 90px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky r_ring" style="left: 531px; top: 104px;"></div>
+                            <div class="rounded-circle bg-danger a_circle position-absolute a_left_pinky r_pinky" style="left: 567px; top: 145px;"></div>
                             <img class="img-fluid w-50 position relative" style="bottom:10px !important;" src="./img/hand1.png">
                         </div>
                     </div>
@@ -139,8 +142,10 @@
                         <h2 class="mt-4 a_welcome"></h2>
                         <h5 class="border-bottom border-4 mt-4" style="border-bottom-color: EFFFD7;">Time</h5>
                         <h2 class="display-3 fw-semibold"> <strong>03:00</strong> </h2>
-                        <div class="d-grid gap-2 position-relative">
-                            <button class="btn text-dark fw-bold btn-outline-success fs-4 position-absolute bottom-0" style="bottom:-420px !important">Start</button>
+                        <div class="d-grid gap-2">
+                            <button class="btn text-dark fw-bold btn-outline-success fs-4">Start</button>
+                            <!-- <button class="btn btn-outline-danger fs-4 text-dark fw-bold" onclick="playSound()">Test Sound</button> -->
+                        
                         </div>
                     </div>
                 </div>
