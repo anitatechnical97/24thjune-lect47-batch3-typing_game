@@ -5,12 +5,14 @@ let saveRegistrationInfo = () => {
     // console.log("Hiiiiiiiii");
     let fn = document.getElementById("first_name").value;
     let ln = document.getElementById("last_name").value;
+    let dur = document.querySelector(".a_select").value;
 
     console.log(fn);
     console.log(ln);
 
     window.localStorage.setItem('first_name',fn);
     window.localStorage.setItem('last_name',ln);
+    window.localStorage.setItem('duration',dur);
 
     window.location.reload();             //  For page reload we use window.location.reload();
 }
@@ -27,6 +29,49 @@ let playSound = (e) => {
   // console.log("hii");
   let a = document.querySelector('audio.a_audio');                  //  In JS, to access the DOM Object we use document.getElementById() and document.querySelector()
    a.play();
+}
+
+
+let start = () => {
+
+  var nextTime = new Date().getTime();
+  nextTime = new Date(nextTime + ( localStorage.getItem('duration')*60*1000));    //    Add 1 hour
+
+  //    Create a new date object with the specified datetime
+  const datetime = new Date(nextTime);
+
+  //    Get the Unix timestamp by dividing the milliseconds
+
+  const unixTimestamp = Math.floor(datetime.getTime() / 1000)*1000;
+  console.log(unixTimestamp);
+
+
+  setInterval(()=>{                            //    setInterval() is a built in function.
+
+    //    Get today's date and time.
+    var now = new Date().getTime();
+    console.log('Next Time',unixTimestamp);
+    console.log('Current Time',now);
+
+
+     // Find the distance between now and the count down date
+    var distance = unixTimestamp - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.querySelector(".a_duration").innerHTML = minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.querySelector(".a_duration").innerHTML = "EXPIRED";
+    }
+  },1000)                                   
+
+
 }
 
 
@@ -263,5 +308,25 @@ let playSound = (e) => {
         document.querySelector('.a_left_pinky').style.display = 'none';
 
       });
+
+
+      /*
+      
+      
+      
+      */
+      var x = '';
+      for(var i =1; i<=60; i++)
+      {
+         x = x + `<option value="${i}">${i}</option>`;
+      }
+
+      // console.log(x);
+      // console.log(document.querySelector('.a_select'));
+
+      document.querySelector('.a_select').innerHTML = x;
+
+      document.querySelector('.a_duration').innerHTML = localStorage.getItem('duration') === null ?'': localStorage.getItem('duration')+':00';
+
 
 })();

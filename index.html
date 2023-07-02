@@ -32,6 +32,12 @@
                           <label for="last_name" class="form-label">Last Name</label>
                           <input type="text" name="last_name" class="form-control" id="last_name">
                         </div>
+                        <div class="mb-3">
+                            <label for="minutes" class="form-label">Minutes</label>
+                            <select class="form-select a_select" aria-label="Default select example">
+                              
+                              </select>
+                          </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -141,9 +147,9 @@
                     <div class="col-3 a_tbdr h-100" style="background: #D2F59F;">
                         <h2 class="mt-4 a_welcome"></h2>
                         <h5 class="border-bottom border-4 mt-4" style="border-bottom-color: EFFFD7;">Time</h5>
-                        <h2 class="display-3 fw-semibold"> <strong>03:00</strong> </h2>
+                        <h2 class="display-3 fw-semibold a_duration"> <strong>03:00</strong> </h2>
                         <div class="d-grid gap-2">
-                            <button class="btn text-dark fw-bold btn-outline-success fs-4">Start</button>
+                            <button class="btn text-dark fw-bold btn-outline-success fs-4" onclick="start()">Start</button>
                             <!-- <button class="btn btn-outline-danger fs-4 text-dark fw-bold" onclick="playSound()">Test Sound</button> -->
                         
                         </div>
