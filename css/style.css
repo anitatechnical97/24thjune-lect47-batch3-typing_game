@@ -1,6 +1,9 @@
-.a_tbdr {
-    border: 1px dashed #000;
+body {
+    background-color:  grey;
 }
+/* .a_tbdr {
+    border: 1px dashed #000;
+} */
 .a_cont {
     height: 700px;
 }

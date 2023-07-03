@@ -80,6 +80,8 @@ let start = () => {
 
 (()=>{
 
+    let currentCharacterPosition=0;
+
     let fn = window.localStorage.getItem('first_name');
     let ln = window.localStorage.getItem('last_name');
 
@@ -298,17 +300,25 @@ let start = () => {
       })
 
       document.addEventListener('keyup',(e) => {
-        console.log(e);
+       // console.log(e);
+
         var elements = document.getElementsByClassName('a_active');
+      //  var elements = document.getElementsByClassName('a_left_pinky');
 
         for (var i = 0; i < elements.length; i++)
         {
-          elements[i].classList.remove('a_active');
+           elements[i].classList.remove('a_active');
+         // elements[i].style.display = "none";
+
         }
-        document.querySelector('.a_left_pinky').style.display = 'none';
+
+          currentCharacterPosition = currentCharacterPosition +1;
+
+          console.log(currentCharacterPosition);
+
+      //  document.querySelector('.a_left_pinky').style.display = 'none';
 
       });
-
 
       /*
       
@@ -328,5 +338,23 @@ let start = () => {
 
       document.querySelector('.a_duration').innerHTML = localStorage.getItem('duration') === null ?'': localStorage.getItem('duration')+':00';
 
+      let story = `Short moral stories are best for children who have been reading for generations. These short stories with morals are popular in different languages and parts of the world. 
+      A moral story depicts practical situations excitingly and carries a message that imbibes 
+      moral values in the children. Different short moral stories teach different lessons to kids.
+       The stories also make children responsible, respectful, empathetic, and honest from a very
+       early age.`;
+
+      //  console.log(story.split(' '));
+
+        let y = story.split(' ');
+
+       //   Function chaining         a().b().c()d().....................so on
+
+       console.log(y.slice(0,20).join(' '));
+       let content = y.slice(0,20).join(' ');
+
+       //   Access the DOM Element
+
+       document.querySelector('.a_typingcontent').innerHTML = content;
 
 })();
